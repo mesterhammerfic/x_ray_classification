@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+chest_xray
+zip
+.zip
+*.zip
