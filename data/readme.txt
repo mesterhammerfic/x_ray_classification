@@ -1,3 +1,3 @@
-The chest_xray file contains duplicates:
+Extarct the chest_xray.zip file in here
 
-delete the __MACOSX and second chest_xray folder ('/chest_xray/chest_xray')
+For example, the path to the training data should look like this: data/chest_xray/train
