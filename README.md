@@ -13,5 +13,6 @@ The images were found to have what look like medical equipment in the x-rays, su
 
 The original validation set had only 16 images in it, which made it difficult to gauge model performance as it progressed through the epochs. Essentialy, the small validation size meant that for each incorrect classification the validation performance would rise or drop no less than 6%. We increased the validation set size by drawing from the training data, allowing us to more accuractely gauge the models performance through the epochs.
 
-Download:
+#### Download:
+
 The data we are using can be found [here](https://www.dropbox.com/s/r23oastdde1v215/chest_xray.zip?dl=0) and should be unzipped into the [data](/data) folder in this projects main directory.
