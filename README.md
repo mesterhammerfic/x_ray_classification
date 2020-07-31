@@ -29,8 +29,8 @@ We chose to fine tune this model by training the layers in the model after the 7
 
 <h5 style="text-align:center;">Test Validation</h5>
 
-|                           |           |        |          |         |
-|---------------------------|-----------|--------|----------|---------|
+|                           |           |
+|---------------------------|-----------|
 |  **Recall**             |     94%    |   
 |  **Precision**        |   84%    |  
 |  **Accuracy**     |   89%    |  
