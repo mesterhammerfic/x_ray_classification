@@ -1,6 +1,27 @@
-# x_ray_classification
+# Improving Radiology Efficiency with AI
+
 An image classifcation project using x-ray data from mendelay.
 
+## Goal
+Create a tool that uses Convolutional Neural Networks to assist in diagnosing patients with pneumonia based on their x-rays. Our tool will be optimized for sensitivity to minimize the number of patients who go undiagnosed. This project is aimed at hospital administrators who are looking to increase the efficiency of their radiology departments and our final product will be built with ease-of-use in mind.
+
+### Objectives
+- Create a CNN that can detect pneumonia in an x-ray image
+- Create an interface that would allow the user to input an image and recieve a diagnosis from the CNN
+
+### Status
+Best model - 
+
+User interface - 
+
+### Table of Contents
+<b>/data</b> - contains all data files used for modelling.
+
+<b>/notebooks</b> - contains step by step descriptions of our process including data exploration and model iterations
+
+<b>/src</b> - contains all scripts that are used in the notebooks/ and reports/ files
+
+<b>/reports</b> - contains the final notebook that describes our findings
 
 ### Data
 The data was originally downloaded from [this](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) kaggle dataset, which references a study published by Cell which can be found [here](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5). The dataset includes x-ray images from both healthy patients and patients with pneumonia. Both bacterial and viral pneumonia are represented and labeled in this data set. X-ray views are only either posterior or anterior chest views. The diognoses used to classify the images were reviewed by the original research team with the help of two expert physicians.
@@ -16,3 +37,31 @@ The original validation set had only 16 images in it, which made it difficult to
 #### Download:
 
 The data we are using can be found [here](https://www.dropbox.com/s/r23oastdde1v215/chest_xray.zip?dl=0) and should be unzipped into the [data](/data) folder in this projects main directory.
+
+### Tools
+ - Python 3.8
+   - tensorflow
+   - keras
+   - matplotlib
+   - seaborn
+   - lime
+ - Anaconda
+ - JupyterLab
+ 
+### Next Steps:
+ - Make the model more transparent in order to troubleshoot errors in classification
+ - See how well the model generalizes to other ailments identified by x-rays
+ - Diagnose the type of pneumonia ie viral vs bacterial
+ - Classify the severity of Pneumonia
+
+
+
+#### Team Members:
+
+Chum Mapa: chaminda.mapa@gmail.com
+
+Syd Rothman: sydrothman@gmail.com
+
+Jason Wong: jwong853@gmail.com
+
+Maximilian Esterhammer-Fic: mesterhammerfic@gmail.com
