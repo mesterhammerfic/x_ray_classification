@@ -10,7 +10,31 @@ Create a tool that uses Convolutional Neural Networks to assist in diagnosing pa
 - Create an interface that would allow the user to input an image and recieve a diagnosis from the CNN
 
 ### Status
-Best model - 
+ 
+<h4 style="text-align:left;">Best Model</h4>
+We achieved the best detection of Pneumonia in chest x-rays with the InceptionResNetV2 Convolutional Neural Network. This CNN has been trained on over a million images from the ImageNet database. If you would like to know more about the model, take a look over the documentation below. 
+
+We chose to fine tune this model by training the layers in the model after the 750th layer. We also set the Early Stopping Callback parameter to a patience level of 14 and to restore the best weights.  
+
+[InceptionResNetV2 Documentation](https://scisharp.github.io/Keras.NET/api/Keras.Applications.Inception.InceptionResNetV2.htm)
+
+
+<h5 style="text-align:center;">Inception-ResNet-V2</h5>
+
+
+|             | Recall | Precision | Accuracy | Support |                           |
+|-------------|-----------|--------|----------|---------|---------------------------|
+| **Normal** |   95%    |  84%  |   89%   |  232   |    
+| **Pneumonia** |   84%    |  94%  |   89%   |  195   |   
+
+<h5 style="text-align:center;">Test Validation</h5>
+
+|                           |           |        |          |         |
+|---------------------------|-----------|--------|----------|---------|
+|  **Recall**             |     94%    |   
+|  **Precision**        |   84%    |  
+|  **Accuracy**     |   89%    |  
+| **Roc-Auc**       |   89%
 
 User interface - 
 
