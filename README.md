@@ -14,7 +14,7 @@ Create a tool that uses Convolutional Neural Networks to assist in diagnosing pa
 <h4 style="text-align:left;">Best Model</h4>
 We achieved the best detection of Pneumonia in chest x-rays with the InceptionResNetV2 Convolutional Neural Network. This CNN has been trained on over a million images from the ImageNet database. If you would like to know more about the model, take a look over the documentation below. 
 
-We chose to fine tune this model by training the layers in the model after the 750th layer. We also set the Early Stopping Callback parameter to a patience level of 14 and to restore the best weights. We set the number of epochs for the model to train at 50 but the model was called back after epoch 16 due to the loss metric no longer improving. The model was optimized for Recall, limiting the amount of False Negatives. Validating this model on the unseen test x-rays, we achieved a recall score of 97%. Therefore, out of all patient x-rays indicating a form of Pneumonia, our model successfully flagged 94% of them.
+We chose to fine tune this model by training the layers in the model after the 750th layer. We also set the Early Stopping Callback parameter to a patience level of 14 and to restore the best weights. We set the number of epochs for the model to train at 50 but the model was called back after epoch 16 due to the loss metric no longer improving. The model was optimized for Recall, limiting the amount of False Negatives. Validating this model on the unseen test x-rays, we achieved a recall score of 97%. Therefore, out of all patient x-rays indicating a form of Pneumonia, our model successfully flagged 97% of them.
 
 
 [InceptionResNetV2 Documentation](https://scisharp.github.io/Keras.NET/api/Keras.Applications.Inception.InceptionResNetV2.htm)
@@ -32,9 +32,9 @@ We chose to fine tune this model by training the layers in the model after the 7
 
 |                           |           |
 |---------------------------|-----------|
-|  **Recall**             |     97%    |   
-|  **Precision**        |   84%    |  
-|  **Accuracy**     |   89%    |  
+|  **Recall**             |     97%       
+|  **Precision**        |   84%      
+|  **Accuracy**     |   89%      
 | **Roc-Auc**       |   89%
 
 User interface - 
