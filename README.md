@@ -20,7 +20,7 @@ We chose to fine tune this model by training the layers in the model after the 7
 [InceptionResNetV2 Documentation](https://scisharp.github.io/Keras.NET/api/Keras.Applications.Inception.InceptionResNetV2.htm)
 
 
-<h5 style="text-align:center;">Inception-ResNet-V2</h5>
+<h4 style="text-align:center;">Inception-ResNet-V2</h4>
 
 
 |             | Recall | Precision | Accuracy | Support |        |                   
@@ -28,7 +28,7 @@ We chose to fine tune this model by training the layers in the model after the 7
 | **Normal** |   95%    |  84%  |   89%   |  232   |    
 | **Pneumonia** |   84%    |  94%  |   89%   |  195   |   
 
-<h5 style="text-align:center;">Test Validation</h5>
+<h4 style="text-align:center;">Test Validation</h4>
 
 |                           |           |
 |---------------------------|-----------|
