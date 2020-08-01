@@ -107,26 +107,50 @@ def load_final_data_generators():
     removed the grey scale color mode to use the images on pre-trained
     models.
     """
+    
     train_datagen = image.ImageDataGenerator(horizontal_flip=True, 
-                                             shear_range=0.2,
-                                             zoom_range=0.3,
-                                             rescale=1./225)
+                                         shear_range=0.2,
+                                         zoom_range=0.3,
+                                         rescale=1./225)
     val_datagen = image.ImageDataGenerator(rescale=1./225)
     directory_iteratorgen = image.ImageDataGenerator(rescale=1./225)
 
     train_data = train_datagen.flow_from_directory('../data/chest_xray/train/',
-                                                   target_size=(100,100),
-                                                   batch_size=32,
-                                                   class_mode='binary')
+                                               target_size=(100,100),
+                                               batch_size=32,
+                                               class_mode='binary')
     val_data = val_datagen.flow_from_directory('../data/chest_xray/val/',
-                                                   target_size=(100,100),
-                                                   batch_size=32,
-                                                   class_mode='binary')
+                                               target_size=(100,100),
+                                               batch_size=32,
+                                               class_mode='binary')
     directory_iterator = directory_iteratorgen.flow_from_directory('../data/chest_xray/test//',
-                                                 target_size=(100,100),
-                                                 batch_size=32,
-                                                 class_mode='binary')
+                                             target_size=(100,100),
+                                             batch_size=32,
+                                             class_mode='binary')
     return train_data, val_data, directory_iterator
+
+def load_datagen_report():
+
+    val_datagen = image.ImageDataGenerator(rescale=1./225)
+    directory_iteratorgen = image.ImageDataGenerator(rescale=1./225)
+    train_datagen = image.ImageDataGenerator(horizontal_flip=True, 
+                                         shear_range=0.3,
+                                         zoom_range=0.4,
+                                         rescale=1./225)
+    train_data = train_datagen.flow_from_directory('../../data/chest_xray/train/',
+                                               target_size=(100,100),
+                                               batch_size=32,
+                                               class_mode='binary')
+    val_data = val_datagen.flow_from_directory('../../data/chest_xray/val/',
+                                               target_size=(100,100),
+                                               batch_size=32,
+                                               class_mode='binary')
+    directory_iterator = directory_iteratorgen.flow_from_directory('../../data/chest_xray/test//',
+                                             target_size=(100,100),
+                                             batch_size=32,
+                                             class_mode='binary')
+    return train_data, val_data, directory_iterator
+
 
 def plot_acc_loss(model, test_data, model_history):
     """This function takes in the model, the test
