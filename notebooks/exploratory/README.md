@@ -1,1 +1,1 @@
-A record of your workflow should be stored in notebooks/exploratory. 
+This folder contains the notebooks used for eda and modeling.
