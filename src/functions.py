@@ -145,7 +145,7 @@ def load_datagen_report():
                                                target_size=(100,100),
                                                batch_size=32,
                                                class_mode='binary')
-    directory_iterator = directory_iteratorgen.flow_from_directory('../../data/chest_xray/test//',
+    directory_iterator = directory_iteratorgen.flow_from_directory('../../data/chest_xray/test/',
                                              target_size=(100,100),
                                              batch_size=32,
                                              class_mode='binary')
