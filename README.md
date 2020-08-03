@@ -67,7 +67,7 @@ This project relies on you using the [`environment.yml`](environment.yml) file t
 conda env create -f environment.yml
 # activate the x_ray conda environment
 conda activate x_ray
-# if needed, make housing available to you as a kernel in jupyter
+# if needed, make x_ray available to you as a kernel in jupyter
 python -m ipykernel install --user --name x_ray --display-name "Python 3 (x_ray)"
 ```
 
