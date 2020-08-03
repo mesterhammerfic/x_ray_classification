@@ -115,7 +115,7 @@ We chose to fine tune this model by training the layers in the model after the 7
 |  **Accuracy**     |   89%      
 | **Roc-Auc**       |   89%
 
-<img src="reports/figures/Results_AUC_ROC.png" alt="drawing" width="400"/> 
+<img src="reports/figures/Results_AUC_ROC.png" alt="drawing" width="600"/> 
 
 ## Data
 The data was originally downloaded from [this](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) kaggle dataset, which references a study published by Cell which can be found [here](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5). The dataset includes x-ray images from both healthy patients and patients with pneumonia. Both bacterial and viral pneumonia are represented and labeled in this data set. X-ray views are only either posterior or anterior chest views. The diognoses used to classify the images were reviewed by the original research team with the help of two expert physicians.
