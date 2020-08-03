@@ -20,28 +20,30 @@ An image classifcation project using x-ray data from mendelay.
 ├── data
 ├── environment.yml
 ├── notebooks
-│   ├── exploratory
-│   │   ├── 01_mef_base_model.ipynb
-│   │   ├── 02_lime_explanation_template.ipynb
-│   │   ├── 03_intermediate_activations_template.ipynb
-│   │   ├── 04_jw_iterations.ipynb
-│   │   ├── 05_jw_best_model.ipynb
-│   │   └── fsm_model.pickle
-│   └── report 
-│       └── final_notebook.ipynb
+│   ├── exploratory
+│   │   ├── 01_mef_base_model.ipynb
+│   │   ├── 02_lime_explanation_template.ipynb
+│   │   ├── 03_intermediate_activations_template.ipynb
+│   │   ├── 04_convolutional_model.ipynb
+│   │   ├── 05_jw_transfer_learning.ipynb
+│   │   ├── 06_jw_iterations.ipynb
+│   │   ├── 07_jw_best_model.ipynb
+│   │   └── fsm_model.pickle
+│   └── report
+│       └── final_notebook.ipynb
 ├── references
-│   ├── PIIS0092867418301545.pdf
-│   ├── person109_bacteria_519.jpeg
-│   └── person3_virus_15.jpeg
+│   ├── PIIS0092867418301545.pdf
+│   ├── person109_bacteria_519.jpeg
+│   └── person3_virus_15.jpeg
 ├── reports
-│   ├── figures
-│   │   ├── after_cleaning.png
-│   │   ├── before_cleaning.png
-│   │   ├── data_cleaning.png
-│   │   ├── Results_AUC_ROC.png
-│   │   └── model_comparison.png
-│   └── presentation
-│       └── x_ray_classification.pdf
+│   ├── figures
+│   │   ├── Results_AUC_ROC.png
+│   │   ├── after_cleaning.png
+│   │   ├── before_cleaning.png
+│   │   ├── data_cleaning.png
+│   │   └── model_comparison.png
+│   └── presentation
+│       └── x_ray_classification.pdf
 └── src
     ├── functions.py
     └── lime_functions.py
