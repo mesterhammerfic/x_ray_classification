@@ -14,6 +14,7 @@ An image classifcation project using x-ray data from mendelay.
 <!--te-->
 
 ## Files and Folders of Note
+```
 .
 ├── README.md
 ├── data
@@ -46,7 +47,7 @@ An image classifcation project using x-ray data from mendelay.
 └── src
     ├── functions.py
     └── lime_functions.py
-
+```
 #### Repo Navigation Links
 
  - [presentation.pdf](https://github.com/mesterhammerfic/x_ray_classification/blob/master/reports/presentation/x_ray_classification.pdf)
