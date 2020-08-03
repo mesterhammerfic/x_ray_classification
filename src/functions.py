@@ -17,17 +17,17 @@ def load_data_generators():
     val_datagen = image.ImageDataGenerator(rescale=1./225)
     directory_iteratorgen = image.ImageDataGenerator(rescale=1./225)
 
-    train_data = train_datagen.flow_from_directory('../data/chest_xray/train/',
+    train_data = train_datagen.flow_from_directory('../../data/chest_xray/train/',
                                                    target_size=(100,100),
                                                    batch_size=32,
                                                    class_mode='binary',
                                                    color_mode='grayscale')
-    val_data = val_datagen.flow_from_directory('../data/chest_xray/val/',
+    val_data = val_datagen.flow_from_directory('../../data/chest_xray/val/',
                                                    target_size=(100,100),
                                                    batch_size=32,
                                                    class_mode='binary',
                                                    color_mode='grayscale')
-    directory_iterator = directory_iteratorgen.flow_from_directory('../data/chest_xray/test//',
+    directory_iterator = directory_iteratorgen.flow_from_directory('../../data/chest_xray/test//',
                                                  target_size=(100,100),
                                                  batch_size=32,
                                                  class_mode='binary',
@@ -115,15 +115,15 @@ def load_final_data_generators():
     val_datagen = image.ImageDataGenerator(rescale=1./225)
     directory_iteratorgen = image.ImageDataGenerator(rescale=1./225)
 
-    train_data = train_datagen.flow_from_directory('../data/chest_xray/train/',
+    train_data = train_datagen.flow_from_directory('../../data/chest_xray/train/',
                                                target_size=(100,100),
                                                batch_size=32,
                                                class_mode='binary')
-    val_data = val_datagen.flow_from_directory('../data/chest_xray/val/',
+    val_data = val_datagen.flow_from_directory('../../data/chest_xray/val/',
                                                target_size=(100,100),
                                                batch_size=32,
                                                class_mode='binary')
-    directory_iterator = directory_iteratorgen.flow_from_directory('../data/chest_xray/test//',
+    directory_iterator = directory_iteratorgen.flow_from_directory('../../data/chest_xray/test//',
                                              target_size=(100,100),
                                              batch_size=32,
                                              class_mode='binary')
