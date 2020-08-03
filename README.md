@@ -59,16 +59,6 @@ An image classifcation project using x-ray data from mendelay.
 
 Ensure that you have installed [Anaconda](https://docs.anaconda.com/anaconda/install/) 
 
-#### Tools
- - Python 3.8
-   - tensorflow
-   - keras
-   - matplotlib
-   - seaborn
-   - lime
- - Anaconda
- - JupyterLab
-
 #### `x_ray` conda Environment
 
 This project relies on you using the [`environment.yml`](environment.yml) file to recreate the `x_ray` conda environment. To do so, please run the following commands *in your terminal*:
@@ -80,6 +70,16 @@ conda activate x_ray
 # if needed, make housing available to you as a kernel in jupyter
 python -m ipykernel install --user --name x_ray --display-name "Python 3 (x_ray)"
 ```
+
+#### Tools
+ - Python 3.8
+   - tensorflow
+   - keras
+   - matplotlib
+   - seaborn
+   - lime
+ - Anaconda
+ - JupyterLab
 
 ## Goal
 Create a tool that uses Convolutional Neural Networks to assist in diagnosing patients with pneumonia based on their x-rays. Our tool will be optimized for sensitivity to minimize the number of patients who go undiagnosed. This project is aimed at hospital administrators who are looking to increase the efficiency of their radiology departments and our final product will be built with ease-of-use in mind.
