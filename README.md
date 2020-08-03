@@ -18,7 +18,6 @@ An image classifcation project using x-ray data from mendelay.
 .
 ├── README.md
 ├── data
-│   └── readme.txts
 ├── environment.yml
 ├── notebooks
 │   ├── exploratory
@@ -41,9 +40,8 @@ An image classifcation project using x-ray data from mendelay.
 │   │   ├── data_cleaning.png
 │   │   ├── Results_AUC_ROC.png
 │   │   └── model_comparison.png
-│   ├── presentation
-│   │   └── x_ray_classification.pdf
-│   └── x_ray_classification.pdf
+│   └── presentation
+│       └── x_ray_classification.pdf
 └── src
     ├── functions.py
     └── lime_functions.py
