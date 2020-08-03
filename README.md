@@ -1,6 +1,6 @@
 # Improving Radiology Efficiency with AI
 
-An image classifcation project using x-ray data from mendelay.
+An image classification project using x-ray data from mendelay.
 
 ## Table of Contents
 
