@@ -53,7 +53,15 @@ The data was originally downloaded from [this](https://www.kaggle.com/paultimoth
 
 #### Note on Cleaning:
 
-The images were found to have what look like medical equipment in the x-rays, such as electrodes, IV tubes, and catheters. The pneumonia positive x-rays had a far higher rate of these objects which could lead to a false sense of model performance. We deduced that the pneumonia-positive x-rays were drawn from patients who were either already being treated for pneumonia or were suffering from illnesses that may have led to pneumonia. LIME analysis also indicated that some of our neural networks learned to look for these medical devices when making their diagnoses. Due to time contraints, we elected to delete the images with medical devices from our training data, but not from our test and validation data. We left the images-with-devices in the test and validation data to ensure that our model would still be able to diagnose with those objects present.
+<img src="reports/figures/data_cleaning.png" alt="drawing" width="600"/> 
+The images were found to have what look like medical equipment in the x-rays, such as electrodes, IV tubes, and catheters. The pneumonia positive x-rays had a far higher rate of these objects which could lead to a false sense of model performance. We deduced that the pneumonia-positive x-rays were drawn from patients who were either already being treated for pneumonia or were suffering from illnesses that may have led to pneumonia. LIME analysis also indicated that some of our neural networks learned to look for these medical devices when making their diagnoses. The image below shows which areas the model was looking at when making a diagnosis. The model used in this image was trained on the original data.
+
+<img src="reports/figures/before_cleaning.png" alt="drawing" width="400"/> 
+
+Due to time contraints, we elected to delete the images with medical devices from our training data, but not from our test and validation data. We left the images-with-devices in the test and validation data to ensure that our model would still be able to diagnose with those objects present. The following image image depicts the same model trained on the cleaned data, showing that it is now looking at the actual lungs when making a diagnosis.
+
+<img src="reports/figures/after_cleaning.png" alt="drawing" width="400"/> 
+
 
 #### Note on Validation Set:
 
