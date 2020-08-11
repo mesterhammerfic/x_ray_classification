@@ -5,9 +5,6 @@ An image classification project using x-ray data from mendelay.
 ## Goal
 Create a tool that uses Convolutional Neural Networks to assist in diagnosing patients with pneumonia based on their x-rays. This project is aimed at hospital administrators who are looking to increase the efficiency of their radiology departments and our final product will be built with ease-of-use in mind. 
 
-#### Objective
-- 
-
 ## Table of Contents
 
 <!--ts-->
